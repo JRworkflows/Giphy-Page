@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+    background-color: black
+}
+
+.actBtns {
+    background-color: #BF3F3F;
+    color: #FFFFFF;
+}
+
+#addBtn {
+    background-color: #BF3F3F;
+    color: #FFFFFF;
+}
+
+#addActivity {
+    background-color: #3FAABF;
+    opacity: .5%;
+}
+
+#activity-form {
+    background-color: black;
+}
+
+#activityButtons {
+    background-color: black
+}
+
+div {
+    background-color: black
+}
