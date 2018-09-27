@@ -38,12 +38,12 @@ function getGIFs() {
             activityImage.attr("data-animate", results[i].images.fixed_height.url);
             activityImage.attr("data-still", results[i].images.fixed_height_still.url);
 
-            // Appending the paragraph and image tag to the animalDiv
+            // Appending the paragraph and image tag to the activityDiv
             activityDiv.append(p);
             activityDiv.append(activityImage);
             activityDiv.prepend("#activities")
 
-            // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
+            // Prependng the activityDiv to the HTML page in the "#gifs-appear-here" div
             activityImage.addClass("gifClass");
 
             $("#activities").prepend(activityDiv);
@@ -77,7 +77,7 @@ $(document).on("click", ".gifClass", function() {
 
 
 $("#addBtn").on("click", function() {
-        var newbtn = $("#addActivity").eq(0).val();
+        var newbtn = $("#addActivity").val();
         console.log("hi");
         $('#activityButtons').append(`<button class="actBtns" data-activity='${newbtn}'>${newbtn}</button>`);
     })
